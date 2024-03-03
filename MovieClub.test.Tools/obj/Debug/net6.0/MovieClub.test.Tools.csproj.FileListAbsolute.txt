@@ -19,3 +19,4 @@ C:\Users\acer\RiderProjects\MovieClub\MovieClub.test.Tools\obj\Debug\net6.0\Movi
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.test.Tools\obj\Debug\net6.0\refint\MovieClub.test.Tools.dll
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.test.Tools\obj\Debug\net6.0\MovieClub.test.Tools.pdb
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.test.Tools\obj\Debug\net6.0\ref\MovieClub.test.Tools.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.test.Tools\obj\Debug\net6.0\MovieClub.test.Tools.sourcelink.json

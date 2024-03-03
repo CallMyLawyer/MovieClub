@@ -1,4 +1,6 @@
-﻿using MovieClub.Services.Genders.Contracts;
+﻿using MovieClub.Entities.Categories;
+using MovieClub.Entities.Movies;
+using MovieClub.Services.Genders.Contracts;
 
 namespace MovieClub.Persistance.EF.Categories;
 
@@ -18,5 +20,11 @@ public class EFCategoryRepository : ICategoryManagerRepository
         }
 
         return true;
+    }
+
+    public Category? AddMovieToCategory(Movie movie)
+    {
+        var category = _context.Categories.FirstOrDefault(_ => _.Id == movie.CategoryId);
+        return category;
     }
 }

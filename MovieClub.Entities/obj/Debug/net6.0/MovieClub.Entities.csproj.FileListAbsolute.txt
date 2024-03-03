@@ -9,3 +9,4 @@ C:\Users\acer\RiderProjects\MovieClub\MovieClub.Entities\obj\Debug\net6.0\MovieC
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Entities\obj\Debug\net6.0\refint\MovieClub.Entities.dll
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Entities\obj\Debug\net6.0\MovieClub.Entities.pdb
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Entities\obj\Debug\net6.0\ref\MovieClub.Entities.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Entities\obj\Debug\net6.0\MovieClub.Entities.sourcelink.json

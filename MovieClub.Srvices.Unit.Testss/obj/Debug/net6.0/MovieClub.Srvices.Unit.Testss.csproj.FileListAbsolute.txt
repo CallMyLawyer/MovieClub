@@ -180,3 +180,4 @@ C:\Users\acer\RiderProjects\MovieClub\MovieClub.Srvices.Unit.Testss\obj\Debug\ne
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Srvices.Unit.Testss\obj\Debug\net6.0\MovieClub.Srvices.Unit.Testss.pdb
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Srvices.Unit.Testss\obj\Debug\net6.0\MovieClub.Srvices.Unit.Testss.genruntimeconfig.cache
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Srvices.Unit.Testss\obj\Debug\net6.0\ref\MovieClub.Srvices.Unit.Testss.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Srvices.Unit.Testss\obj\Debug\net6.0\MovieClub.Srvices.Unit.Testss.sourcelink.json

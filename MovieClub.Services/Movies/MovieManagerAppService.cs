@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 using MovieClub.Contracts.Interfaces;
+using MovieClub.Entities.Categories;
 using MovieClub.Entities.Movies;
 using MovieClub.Services.Genders.Contracts;
 using MovieClub.Services.Movies.Contracts;
@@ -23,7 +24,7 @@ public class MovieManagerAppService : IMovieManagerService
         _categoryRepository = categoryRepository;
     }
 
-    public async Task Add(AddMovieDto dto)
+    public async Task Add(AddMovieDto dto )
     {
         if (_categoryRepository.IsExistCategoryId(dto.CategoryId))
         {
@@ -48,6 +49,7 @@ public class MovieManagerAppService : IMovieManagerService
          PenaltyPrice = dto.PenaltyPrice
         };
         _movieRepository.Add(movie);
+        _categoryRepository.AddMovieToCategory(movie);
         await _unitOfWork.Complete();
     }
 }

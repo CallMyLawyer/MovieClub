@@ -9,3 +9,4 @@ C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\Movie
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\refint\MovieClub.Contracts.dll
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\MovieClub.Contracts.pdb
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\ref\MovieClub.Contracts.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\MovieClub.Contracts.sourcelink.json
