@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Categories\Contracts\Dtos\" />
+      <Folder Include="Categories\Contracts\Exceptions\" />
+      <Folder Include="Categories\Contracts\CategoryUsersContracts\" />
+      <Folder Include="Movies\Contracts\MovieUserContracts\Dtos\" />
+      <Folder Include="Movies\Contracts\MovieUserContracts\Exceptions\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MovieClub.Contracts\MovieClub.Contracts.csproj" />
+      <ProjectReference Include="..\MovieClub.Entities\MovieClub.Entities.csproj" />
+    </ItemGroup>
+
+</Project>

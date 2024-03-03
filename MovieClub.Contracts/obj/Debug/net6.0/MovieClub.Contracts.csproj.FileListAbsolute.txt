@@ -1,0 +1,11 @@
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\bin\Debug\net6.0\MovieClub.Contracts.deps.json
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\bin\Debug\net6.0\MovieClub.Contracts.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\bin\Debug\net6.0\MovieClub.Contracts.pdb
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\MovieClub.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\MovieClub.Contracts.AssemblyInfoInputs.cache
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\MovieClub.Contracts.AssemblyInfo.cs
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\MovieClub.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\MovieClub.Contracts.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\refint\MovieClub.Contracts.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\MovieClub.Contracts.pdb
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Contracts\obj\Debug\net6.0\ref\MovieClub.Contracts.dll

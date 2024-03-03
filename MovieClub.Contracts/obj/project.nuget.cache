@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cz/TYRcLspCb9HO8o4pfGKq2twy3lvYbS0Njd3HoZryz3VNXaZKDuAwvXgAlU89KlMOul0B3MYc9CpGEvd35nw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\acer\\RiderProjects\\MovieClub\\MovieClub.Contracts\\MovieClub.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}

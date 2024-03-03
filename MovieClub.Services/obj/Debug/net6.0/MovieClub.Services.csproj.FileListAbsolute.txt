@@ -1,0 +1,17 @@
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\bin\Debug\net6.0\MovieClub.Services.deps.json
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\bin\Debug\net6.0\MovieClub.Services.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\bin\Debug\net6.0\MovieClub.Services.pdb
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\bin\Debug\net6.0\MovieClub.Contracts.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\bin\Debug\net6.0\MovieClub.Entities.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\bin\Debug\net6.0\MovieClub.Contracts.pdb
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\bin\Debug\net6.0\MovieClub.Entities.pdb
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\MovieClub.Services.csproj.AssemblyReference.cache
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\MovieClub.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\MovieClub.Services.AssemblyInfoInputs.cache
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\MovieClub.Services.AssemblyInfo.cs
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\MovieClub.Services.csproj.CoreCompileInputs.cache
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\MovieClub.Services.csproj.CopyComplete
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\MovieClub.Services.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\refint\MovieClub.Services.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\MovieClub.Services.pdb
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Services\obj\Debug\net6.0\ref\MovieClub.Services.dll
