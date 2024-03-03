@@ -37,3 +37,4 @@ C:\Users\acer\RiderProjects\MovieClub\MovieClub.Migrations\obj\Debug\net6.0\refi
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Migrations\obj\Debug\net6.0\MovieClub.Migrations.pdb
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Migrations\obj\Debug\net6.0\MovieClub.Migrations.genruntimeconfig.cache
 C:\Users\acer\RiderProjects\MovieClub\MovieClub.Migrations\obj\Debug\net6.0\ref\MovieClub.Migrations.dll
+C:\Users\acer\RiderProjects\MovieClub\MovieClub.Migrations\obj\Debug\net6.0\MovieClub.Migrations.sourcelink.json

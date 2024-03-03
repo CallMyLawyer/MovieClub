@@ -7,4 +7,5 @@ public interface ICategoryManagerRepository
 {
     bool IsExistCategoryId(int? id);
     Category? AddMovieToCategory(Movie movie);
+    void Add(Category category);
 }

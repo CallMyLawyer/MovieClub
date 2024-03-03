@@ -27,4 +27,9 @@ public class EFCategoryRepository : ICategoryManagerRepository
         var category = _context.Categories.FirstOrDefault(_ => _.Id == movie.CategoryId);
         return category;
     }
+
+    public void Add(Category category)
+    {
+        _context.Categories.Add(category);
+    }
 }

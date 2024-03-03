@@ -20,7 +20,11 @@ public class CategoryBuilder
         };
     }
 
-
+    public CategoryBuilder WithId(int id)
+    {
+        _category.Id = id;
+        return this;
+    }
     public CategoryBuilder WithRate(int rate)
     {
         _category.Rate = rate;

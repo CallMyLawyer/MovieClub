@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Diagnostics;
+using System.Runtime.InteropServices;
 using MovieClub.Contracts.Interfaces;
 using MovieClub.Entities.Categories;
 using MovieClub.Entities.Movies;
@@ -50,6 +51,59 @@ public class MovieManagerAppService : IMovieManagerService
         };
         _movieRepository.Add(movie);
         _categoryRepository.AddMovieToCategory(movie);
+        await _unitOfWork.Complete();
+    }
+
+    public async Task Update(int id , UpdateMovieDto dto)
+    {
+        var movie = _movieRepository.FindById(id);
+        if (movie==null)
+        {
+            throw new MovieIdDoesNotExistException();
+        }
+        if (_categoryRepository.IsExistCategoryId(dto.CategoryId))
+        {
+            throw new CategoryIdDoesNotExistException();
+        }
+
+        if (_movieRepository.MultiplyName(dto.Name))
+        {
+            throw new TheMovieNameAlreadyExistsException();
+        }
+
+        movie.Description = dto.Description;
+        movie.PenaltyPrice = dto.PenaltyPrice;
+        movie.CategoryId = dto.CategoryId;
+        movie.Director = dto.Director;
+        movie.Count = dto.Count = 1;
+        movie.Duration = dto.Duration;
+        movie.DailyRentPrice = dto.DailyRentPrice;
+        movie.PublishedDate = dto.PublishedDate;
+        movie.Name = dto.Name;
+        movie.AgeLimit = dto.AgeLimit;
+        
+        
+
+        await _unitOfWork.Complete();
+    }
+
+    public List<GetMovieDto> GetAllOrOne(int? id)
+    {
+        if (_movieRepository.FindById(id)==null)
+        {
+            throw new MovieIdDoesNotExistException();
+        }
+        var movies = _movieRepository.Get(id);
+        return movies;
+    }
+
+    public async Task Delete(int id)
+    {
+        if (_movieRepository.FindById(id)==null)
+        {
+            throw new MovieIdDoesNotExistException();
+        }
+        _movieRepository.Delete(id);
         await _unitOfWork.Complete();
     }
 }
