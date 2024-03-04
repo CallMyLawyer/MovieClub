@@ -25,10 +25,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\Genders\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\MovieClub.Persistance.EF\MovieClub.Persistance.EF.csproj" />
       <ProjectReference Include="..\MovieClub.Services\MovieClub.Services.csproj" />
     </ItemGroup>

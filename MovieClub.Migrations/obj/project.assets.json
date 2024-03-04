@@ -1905,6 +1905,19 @@
             "rid": "win"
           }
         }
+      },
+      "MovieClub.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FluentMigrator.Extensions.SqlServer": "5.1.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieClub.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieClub.Entities.dll": {}
+        }
       }
     }
   },
@@ -5856,13 +5869,19 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "MovieClub.Entities/1.0.0": {
+      "type": "project",
+      "path": "../MovieClub.Entities/MovieClub.Entities.csproj",
+      "msbuildProject": "../MovieClub.Entities/MovieClub.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "FluentMigrator >= 5.1.0",
       "FluentMigrator.Runner >= 5.1.0",
-      "Microsoft.EntityFrameworkCore.SqlServer.Design >= 2.0.0-preview1-final"
+      "Microsoft.EntityFrameworkCore.SqlServer.Design >= 2.0.0-preview1-final",
+      "MovieClub.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5897,7 +5916,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\acer\\RiderProjects\\MovieClub\\MovieClub.Entities\\MovieClub.Entities.csproj": {
+              "projectPath": "C:\\Users\\acer\\RiderProjects\\MovieClub\\MovieClub.Entities\\MovieClub.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

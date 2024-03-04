@@ -9,6 +9,6 @@ var serviceCollection = new ServiceCollection()
     .AddFluentMigratorCore()
     .ConfigureRunner(rb => rb.AddSqlServer()
         .WithGlobalConnectionString(connectionString)
-        .ScanIn(typeof(_202404031537_Monday).Assembly).For.Migrations())
+        .ScanIn(typeof(_202404031537_AddCategoriesTable).Assembly).For.Migrations())
     .BuildServiceProvider();
 serviceCollection.GetRequiredService<IMigrationRunner>().MigrateUp();
