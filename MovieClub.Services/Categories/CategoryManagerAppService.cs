@@ -71,6 +71,11 @@ public class CategoryManagerAppService : ICategoryManagerService
         {
             throw new CategoryIdDoesNotExistException();
         }
+
+        if (_categoryRepository.MovieExistInCategory(id))
+        {
+            throw new ThisCategoryHasMovieException();
+        }
         _categoryRepository.Delete(id);
         await _unitOfWork.Complete();
     }

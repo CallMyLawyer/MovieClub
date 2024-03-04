@@ -14,4 +14,5 @@ public interface ICategoryManagerRepository
     List<GetCategoryDto> GetAllOrOne(int? id);
 
     void Delete(int id);
+    bool MovieExistInCategory(int id);
 }

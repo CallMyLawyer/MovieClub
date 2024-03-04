@@ -70,13 +70,19 @@ public class EFCategoryRepository : ICategoryManagerRepository
         return categories;
     }
 
+    public bool MovieExistInCategory(int id)
+    {
+        var category = _context.Categories.FirstOrDefault(_ => _.Id == id);
+        if (category!=null)
+        {
+            return true;
+        }
+
+        return false;
+    }
     public void Delete(int id)
     {
-        var category = _context.Categories.Include(category => category.Movies).FirstOrDefault(_ => _.Id == id);
-        if (category.Movies!=null)
-        {
-            throw new ThisCategoryHasMovieException();
-        }
+        var category = _context.Categories.FirstOrDefault(_ => _.Id == id);
         _context.Categories.Remove(category);
     }
 }

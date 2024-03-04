@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieClub.test.Tools")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3452195954d3e5fa11e9bc49a92c67667aae677")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba656cd4065fccbbc017dd59807565d466a5fbe2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieClub.test.Tools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieClub.test.Tools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

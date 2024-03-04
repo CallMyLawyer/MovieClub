@@ -67,6 +67,8 @@ public class EFMovieRepository : IMovieManagerRepository , IMovieUserRepository
     public void Delete(int id)
     {
         var movie = _context.Movies.FirstOrDefault(_ => _.Id == id);
+        var category = _context.Categories.First(_ => _.Id == movie.CategoryId);
+        category.Movies.Remove(movie);
          _context.Movies.Remove(movie);
     }
 }
