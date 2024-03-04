@@ -37,6 +37,12 @@ public class CategoryBuilder
         return this;
     }
 
+    public CategoryBuilder WithMovie(Movie movie)
+    {
+     _category.Movies.Add(movie);
+     return this;
+    }
+
     public Category Build()
     {
         return _category;

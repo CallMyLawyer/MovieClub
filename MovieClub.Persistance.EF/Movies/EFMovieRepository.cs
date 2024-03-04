@@ -17,7 +17,9 @@ public class EFMovieRepository : IMovieManagerRepository , IMovieUserRepository
 
     public void Add(Movie movie)
     {
-        _context.Movies.Add(movie); 
+        _context.Movies.Add(movie);
+        var category = _context.Categories.First(_ => _.Id == movie.CategoryId);
+        category.Movies.Add(movie);
     }
 
     public bool MultiplyName(string name)

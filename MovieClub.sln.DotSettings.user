@@ -22,5 +22,6 @@
     &lt;TestId&gt;xUnit::9268932C-3407-49F8-A9B1-464F2BA1973B::net6.0::MovieClub.Srvices.Unit.Testss.Categories.Managers.GetCategoryServiceTests.Get_should_throws_exception_when_category_id_does_not_exist&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::9268932C-3407-49F8-A9B1-464F2BA1973B::net6.0::MovieClub.Srvices.Unit.Testss.Categories.Managers.DeleteCategoryServiceTests.Delete_delete_a_category_properly&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::9268932C-3407-49F8-A9B1-464F2BA1973B::net6.0::MovieClub.Srvices.Unit.Testss.Categories.Managers.DeleteCategoryServiceTests.Delete_throws_exception_when_is_does_not_exist&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9268932C-3407-49F8-A9B1-464F2BA1973B::net6.0::MovieClub.Srvices.Unit.Testss.Categories.Managers.DeleteCategoryServiceTests.Delete_throws_exception_when_Category_has_Movie&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

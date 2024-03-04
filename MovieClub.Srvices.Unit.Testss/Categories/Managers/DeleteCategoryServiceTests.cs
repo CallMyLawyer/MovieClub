@@ -1,9 +1,11 @@
 ﻿using FluentAssertions;
 using MovieClub.Persistance.EF;
+using MovieClub.Services.Categories.Contracts.CatetoryManagersContracts.Exceptions;
 using MovieClub.Services.Genders.Contracts;
 using MovieClub.Services.Movies.Contracts.Exceptions;
 using MovieClub.test.Taools.Categories;
 using MovieClub.test.Taools.Infrastructure.DatabaseConfig.Unit;
+using MovieClub.test.Taools.Movies;
 using Xunit;
 
 namespace MovieClub.Srvices.Unit.Testss.Categories.Managers;
@@ -40,6 +42,18 @@ public class DeleteCategoryServiceTests
     {
         var act = () => _sut.Delete(3);
         await act.Should().ThrowExactlyAsync<CategoryIdDoesNotExistException>();
+    }
+
+    [Fact]
+    public async Task Delete_throws_exception_when_Category_has_Movie()
+    {
+        var movie = new MovieBuilder().Build();
+        var category = new CategoryBuilder().WithMovie(movie).Build();
+        _context.Save(category);
+
+        var act = () => _sut.Delete(category.Id);
+
+        await act.Should().ThrowExactlyAsync<ThisCategoryHasMovieException>();
     }
 
 }

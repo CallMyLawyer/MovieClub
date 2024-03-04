@@ -1,5 +1,7 @@
-﻿using MovieClub.Entities.Categories;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieClub.Entities.Categories;
 using MovieClub.Entities.Movies;
+using MovieClub.Services.Categories.Contracts.CatetoryManagersContracts.Exceptions;
 using MovieClub.Services.Genders.Contracts;
 using MovieClub.Services.Genders.Contracts.Dtos;
 
@@ -70,7 +72,11 @@ public class EFCategoryRepository : ICategoryManagerRepository
 
     public void Delete(int id)
     {
-        var category = _context.Categories.FirstOrDefault(_ => _.Id == id);
+        var category = _context.Categories.Include(category => category.Movies).FirstOrDefault(_ => _.Id == id);
+        if (category.Movies!=null)
+        {
+            throw new ThisCategoryHasMovieException();
+        }
         _context.Categories.Remove(category);
     }
 }
