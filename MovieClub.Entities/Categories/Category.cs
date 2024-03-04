@@ -5,12 +5,10 @@ namespace MovieClub.Entities.Categories;
 
 public class Category
 {
-    [Key]
-    public int Id { get; set; }
-    [Required , MaxLength(50)]
+    [Required , Key]
+    public int Id{ get; set; }
+
     public string Title{ get; set; }
-   [Required] 
+    public List<Movie> Movies{ get; set; }
     public int Rate{ get; set; }
-    
-    public List<Movie?> Movies{ get; set; }
 }
