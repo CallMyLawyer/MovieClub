@@ -1,6 +1,7 @@
 ﻿using MovieClub.Entities.Categories;
 using MovieClub.Entities.Movies;
 using MovieClub.Services.Genders.Contracts;
+using MovieClub.Services.Genders.Contracts.Dtos;
 
 namespace MovieClub.Persistance.EF.Categories;
 
@@ -22,6 +23,16 @@ public class EFCategoryRepository : ICategoryManagerRepository
         return true;
     }
 
+    public bool IsExistCategoryTitle(string title)
+    {
+        if (_context.Categories.Any(_=>_.Title==title))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
     public Category? AddMovieToCategory(Movie movie)
     {
         var category = _context.Categories.FirstOrDefault(_ => _.Id == movie.CategoryId);
@@ -31,5 +42,35 @@ public class EFCategoryRepository : ICategoryManagerRepository
     public void Add(Category category)
     {
         _context.Categories.Add(category);
+    }
+
+    public Category? FindCategoryById(int id)
+    {
+        var category = _context.Categories.FirstOrDefault(_ => _.Id == id);
+        return category;
+    }
+
+    public List<GetCategoryDto> GetAllOrOne(int? id)
+    {
+        var categories = _context.Categories.Select(_ => new GetCategoryDto()
+        {
+         Id = _.Id,
+         Title = _.Title,
+         Rate = _.Rate,
+         Movies = _.Movies
+        }).ToList();
+        if (id!=null)
+        {
+            var category = categories.Where(_ => _.Id == id).ToList();
+            return category;
+        }
+
+        return categories;
+    }
+
+    public void Delete(int id)
+    {
+        var category = _context.Categories.FirstOrDefault(_ => _.Id == id);
+        _context.Categories.Remove(category);
     }
 }

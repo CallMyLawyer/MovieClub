@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Categories\Contracts\CatetoryManagersContracts\Exceptions\" />
       <Folder Include="Movies\Contracts\MovieUserContracts\Dtos\" />
       <Folder Include="Movies\Contracts\MovieUserContracts\Exceptions\" />
     </ItemGroup>
